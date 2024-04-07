@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente Ascendente</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+    <h1>Método De Gradiente Ascendente</h1>
+    <form action="/calculate" method="post">
+        <label for="func">Ingrese la función a maximizar (use 'x' como la variable):</label><br>
+        <input type="text" id="func" name="func"><br>
+        <label for="learning_rate">Ingrese valor de x:</label><br>
+        <input type="text" id="learning_rate" name="learning_rate"><br>
+        <label for="epsilon">Ingrese el valor del error absoluto:</label><br>
+        <input type="text" id="epsilon" name="epsilon"><br>
+        <input type="submit" value="Calcular">
+    </form>
+</body>
+</html>
