@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Metodos</title>
+    <style>
+        body {
+            font-family: 'Crimson Text', serif;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header img {
+            height: 100px;
+            margin: 0 20px;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        h2, h3 {
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+        }
+        .subtitulo {
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            width: 50%;
+        }
+
+        .sidebar {
+            flex: 1;
+            margin: 10px;
+            width: 200px; /* valor para alargar el borde */
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #000;
+            border-style: solid;
+        }
+
+        .sidebar.right {
+            margin-left: 20px;
+        }
+
+        .sidebar h4 {
+            font-size: 14px; 
+            word-wrap: break-word; /* Esto hará que las palabras largas se rompan y pasen a la siguiente línea */
+            text-align: center;
+        }
+        .container a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            position: relative;
+            left: 0;
+        }
+        
+        .container a:hover {
+            background-color: #d5eaea;
+            color: #fff;
+            left: 10px;
+        }
+        
+        .container a:active {
+            background-color: #ffffff;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="content">
+        <h1>Universidad Autónoma de Chiapas</h1>
+        <h2>Faculta de Contaduría y Administración C-I</h2>
+        <h3>Licenciatura en Sistemas Computacionales</h3>
+        <h4>Materia: Investigaciones de Operaciones</h4>
+        <h4>Métodos Programados</h4>
+        <h4>Catedrático: Suarez Zenteno José Alejandro</h4>
+        <h4>Alumno: Jared Daniel Salazar Sánchez</h4>
+        <h4>Matricula: A221664</h4>
+        <h4>Fecha de entrega: 16 de abril de 2024</h4>
+        <h4>Tuxtla Gutiérrez</h4>
+    </div>
+
+    <div class="subtitulo">
+        <h3>Seleccione un método a realizar</h3>
+    </div>
+
+    <div class="container">
+        <div class="sidebar left">
+            <a href="{{ url_for('index') }}"><h4>Gradiente Ascendente</h4></a>
+        </div>
+        <div class="sidebar right">
+            <a href="{{ url_for('S_Dorada') }}"><h4>Sección Dorada</h4></a>
+        </div>
+    </div>
+
+</body>
+</html>

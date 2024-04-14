@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradiente Ascendente</title>
+    <title>Sección Dorada</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../static/index.css">
+    <link rel="stylesheet" href="../static/S_Dorada.css">
 </head>
 <body>
     <div class="relative min-h-screen md:flex">
@@ -48,16 +46,20 @@
 
         <!-- content -->
         <div class="content w-full md:pl-64">
-            <h1>Método De Gradiente Ascendente</h1>
-            <form action="/calculate" method="post">
-                <label for="func">Ingrese la función a maximizar (use 'x' como la variable):</label><br>
-                <input type="text" id="func" name="func"><br>
-                <label for="learning_rate">Ingrese valor de x:</label><br>
-                <input type="text" id="learning_rate" name="learning_rate"><br>
-                <label for="epsilon">Ingrese el valor del error absoluto:</label><br>
-                <input type="text" id="epsilon" name="epsilon"><br>
-                <input type="submit" value="Calcular">
-            </form>
+                <h1>Sección Dorada</h1>
+                <form action="/S_Dorada" method="post">
+                    <label for="func">Función:</label><br>
+                    <input type="text" id="func" name="func"><br>
+                    <label for="li">Límite inferior:</label><br>
+                    <input type="text" id="li" name="li"><br>
+                    <label for="ls">Límite superior:</label><br>
+                    <input type="text" id="ls" name="ls"><br>
+                    <label for="maxite">Número máximo de iteraciones:</label><br>
+                    <input type="text" id="maxite" name="maxite"><br>
+                    <label for="exac">Exactitud:</label><br>
+                    <input type="text" id="exac" name="exac"><br>
+                    <input type="submit" value="Calcular">
+                </form>
         </div>
     </div>
 
@@ -69,6 +71,7 @@
             sidebar.classList.toggle("-translate-x-full");
         });
     </script>
+    
     
 </body>
 </html>
