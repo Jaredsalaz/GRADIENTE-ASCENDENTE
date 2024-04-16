@@ -1,0 +1,6 @@
+flask
+sympy
+pandas
+plotly
+matplotlib
+numpy
